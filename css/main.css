@@ -18,7 +18,7 @@ a{
 }
 
 .container{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -46,6 +46,7 @@ a{
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     padding: 20px;
 
@@ -62,6 +63,7 @@ a{
     margin-right: 100px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -74,7 +76,30 @@ a{
     font-size: 14px;
     font-weight: 500;
 
-    color: #000000;
+    transition: 0.2s ease;
+
+    color: #1d1d1d;
+}
+
+.header-wrap .header-nav ul li a:hover{
+    display: block;
+    transform: scale(1.05);
+    color: #1D1D1DFF;
+}
+
+.header-wrap .header-nav ul li a:active{
+    transform: scale(0.95);
+}
+.header-profile div svg{
+    transition: 0.2s;
+}
+
+.header-profile div svg:hover{
+    transform: scale(1.4);
+}
+
+.header-profile div svg:active{
+    transform: scale(0.9);
 }
 
 .header-profile{
@@ -82,5 +107,73 @@ a{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
 
+
+/*Banner*/
+.banner-wrap{
+    height: 800px;
+
+    background: url("../img/section_banner/background.png");
+}
+
+.banner-content{
+    padding-top: 60px;
+
+    text-align: center;
+}
+
+.banner-content h1{
+    margin-bottom: 24px;
+
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.banner-content p{
+    margin-bottom: 24px;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.banner-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-btn{
+    /*max-width: 201px;*/
+    padding: 10px 50px;
+    border-radius: 35px;
+    transition: 0.2s;
+
+    background-color: #FF4A32;
+    color: #ffffff;
+}
+
+.banner-btns a:hover{
+    display: block;
+    background-color: #c73728;
+    transform: scale(1.05);
+}
+
+.banner-btns a:active{
+    transform: scale(0.95);
+}
+
+.banner-btn:nth-child(2){
+    margin-left: 12px;
+    padding: 10px 37px;
+}
+
+.banner-footer{
+    height: 83px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #000000;
 }
