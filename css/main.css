@@ -31,6 +31,28 @@ a{
 }
 
 /*Header*/
+
+
+header{
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+header .container{
+    max-width: 1440px;
+    background-color: rgba(255, 255, 255, 1);
+
+    transition: 0.5s;
+}
+
+header .container:hover{
+    background-color: rgb(255, 255, 255);
+}
+
 .header-first_text{
     position: relative;
     height: 29px;
@@ -56,7 +78,7 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -116,7 +138,6 @@ a{
     align-items: center;
     gap: 20px;
 }
-
 
 /*Banner*/
 .banner-wrap{
@@ -557,7 +578,7 @@ a{
 
     display: flex;
     justify-content: space-around;
-    gap: 450px;
+    gap: 400px;
 }
 
 .footer-license_links{
@@ -569,4 +590,35 @@ a{
 .footer-payments ul{
     display: flex;
     gap: 6px;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 320px;
+    }
 }
