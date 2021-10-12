@@ -472,7 +472,18 @@ header .container:hover{
 
     align-items: center;
 
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(200, 200, 200, 0.75);
+
+    transition: 0.2s;
+}
+
+.accessories-arrow_bg:hover{
+    background: rgb(200, 200, 200);
+    transform: scale(1.05);
+}
+
+.accessories-arrow_bg:active{
+    transform: scale(0.95);
 }
 
 .accessories-arrow_bg svg {
