@@ -19,6 +19,7 @@ a{
 
 .container{
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -329,7 +330,7 @@ header .container:hover{
     margin-bottom: 11px;
 }
 
-/*Hide perfomance - Boosted rev*/
+/*Hide perfomance - Boosted revs*/
 .boosted_rev-wrap{
     position: relative;
     max-width: 1200px;
@@ -440,12 +441,48 @@ header .container:hover{
 }
 
 .accessories-slider{
+    position: relative;
 
     margin-top: 66px;
 
     display: flex;
     gap: 20px;
 }
+
+.accessories-arrowBx{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.accessories-arrow_left{
+    left: 0;
+}
+
+.accessories-arrow_right{
+    right: 0;
+}
+
+.accessories-arrow_bg{
+    position: relative;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.accessories-arrow_bg svg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 
 .accessoriesBX h4{
     font-size: 14px;
@@ -456,37 +493,6 @@ header .container:hover{
     font-size: 14px;
     font-weight: 400;
 }
-
-/*.accessories-arrow_bg{
-    background: rgba(255, 255, 255, 0.75);
-
-}
-
-.accessories-arrow_left{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.accessories-arrow_right{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.accessories-arrowBx{
-    position: relative;
-}
-
-.accessories-arrowBx svg{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}*/
 
 .rectangle{
     margin: 6px 0 28px 0;
