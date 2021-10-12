@@ -1,0 +1,36 @@
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        width: 100%;
+    }
+    .header-nav{
+        display: none;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        width: 100%;
+
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        width: 100%;
+
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 320px;
+        width: 100%;
+    }
+}
