@@ -453,6 +453,7 @@ header .container:hover{
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
+    z-index: 1000;
 }
 
 .accessories-arrow_left{
@@ -477,12 +478,12 @@ header .container:hover{
     transition: 0.2s;
 }
 
-.accessories-arrow_bg:hover{
+.accessories-arrowBx:hover{
     background: rgb(200, 200, 200);
     transform: scale(1.05);
 }
 
-.accessories-arrow_bg:active{
+.accessories-arrowBx:active{
     transform: scale(0.95);
 }
 
