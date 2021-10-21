@@ -453,6 +453,11 @@ header .container:hover{
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
+
+    background: rgba(206, 206, 206, 0.75);
+    border-radius: 50%;
+
+    transition: 0.2s;
     z-index: 1000;
 }
 
@@ -472,19 +477,15 @@ header .container:hover{
     border-radius: 22px;
 
     align-items: center;
-
-    background: rgba(206, 206, 206, 0.75);
-
-    transition: 0.2s;
 }
 
 .accessories-arrowBx:hover{
     background: rgb(200, 200, 200);
-    transform: scale(1.05);
+    transform: translateY(-50%) scale(1.05);
 }
 
 .accessories-arrowBx:active{
-    transform: scale(0.95);
+    transform: translateY(-50%) scale(0.95);
 }
 
 .accessories-arrow_bg svg {
