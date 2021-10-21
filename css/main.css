@@ -472,7 +472,7 @@ header .container:hover{
 
     align-items: center;
 
-    background: rgba(200, 200, 200, 0.75);
+    background: rgba(206, 206, 206, 0.75);
 
     transition: 0.2s;
 }
@@ -494,6 +494,13 @@ header .container:hover{
     transform: translateX(-50%) translateY(-50%);
 }
 
+.accessoriesBX{
+    transition: .2s;
+}
+
+.accessoriesBX:hover{
+    transform: scale(1.05);
+}
 
 .accessoriesBX h4{
     font-size: 14px;
