@@ -185,11 +185,11 @@ header .container:hover{
 .banner-btns a:hover{
     display: block;
     background-color: #c73728;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .banner-btns a:active{
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 .btn:nth-child(2){
@@ -358,12 +358,21 @@ header .container:hover{
 
 /*Hide perfomance - Shop boosted*/
 .shop_boosted-wrap{
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .shop_boostedBx{
+    height: 480px;
     position: relative;
+    overflow: hidden;
+}
+
+.shop_boostedBx:hover>img{
+    transform: scale(1.05);
+    transition: 2s;
+
 }
 
 .shop_boosted-content{
@@ -403,17 +412,21 @@ header .container:hover{
     margin: 0 auto;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .videosBx{
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
 }
 
 /*Accessories*/
 .accessories-wrap{
     text-align: center;
 
+    display: flex;
+    overflow: hidden;
 }
 
 .accessories-wrap h2{
@@ -423,6 +436,7 @@ header .container:hover{
 
 .accessories-title{
     position: relative;
+    text-align: center;
 }
 
 .accessories-title:after{
@@ -496,6 +510,8 @@ header .container:hover{
 }
 
 .accessoriesBX{
+    min-width: 185px;
+    min-height: 238px;
     transition: .2s;
 }
 
